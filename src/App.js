@@ -7,6 +7,7 @@ import About from './components/About';
 import Skills from './components/Skills';
 import Education from './components/Education';  
 import Register from './components/Register';
+import Card from './components/Card';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
       <Skills />
       <Education />
       <Register />
+      <Card />
       <Footer />
     </div>
   );
