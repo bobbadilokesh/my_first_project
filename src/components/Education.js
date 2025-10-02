@@ -3,10 +3,10 @@ import React from 'react'
 function Education() {
     return (
         <div>
-            <section class="container my-5">
-                <h2 class="text-center mb-4">Education Qualifications</h2>
-                <table class="table table-bordered table-hover text-center">
-                    <thead class="table-dark">
+            <section className="container my-5">
+                <h2 className="text-center mb-4">Education Qualifications</h2>
+                <table className="table table-bordered table-hover text-center">
+                    <thead className="table-dark">
                         <tr>
                             <th>Qualifications</th>
                             <th>School/College</th>

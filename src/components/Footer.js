@@ -3,16 +3,16 @@ import React from 'react'
 function Footer() {
     return (
         <div>
-            <div class="card">
-                <div class="card-header">
+            <div className="card">
+                <div className="card-header">
                     Quote
                 </div>
-                <div class="card-body">
+                <div className="card-body">
                     <figure>
-                        <blockquote class="blockquote">
+                        <blockquote className="blockquote">
                             <p>A well-known quote, contained in a blockquote element.</p>
                         </blockquote>
-                        <figcaption class="blockquote-footer">
+                        <figcaption className="blockquote-footer">
                             Someone famous in <cite title="Source Title">Source Title</cite>
                         </figcaption>
                     </figure>

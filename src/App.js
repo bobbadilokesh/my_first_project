@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './components/Home';
@@ -9,32 +10,24 @@ import Education from './components/Education';
 import Register from './components/Register';
 import Card from './components/Card';
 import 'bootstrap/dist/css/bootstrap.min.css';
+ 
 
 function App() {
   return (
     <div className="App">
+      <BrowserRouter>   
       <Header />
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a> */}
-      {/* </header> */}
-      <Home />
-      <About />
-      <Skills />
+      <Routes>
+      <Route path="/" element={<Home />}></Route>
+      <Route path="/about" element={<About />}></Route>
+      <Route path="/skills" element={<Skills />}></Route>
+      </Routes>
+      
       <Education />
       <Register />
       <Card />
       <Footer />
+      </BrowserRouter>
     </div>
   );
 }
