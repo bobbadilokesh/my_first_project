@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+
 function Header() {
     return (
         <div>
@@ -13,15 +14,24 @@ function Header() {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <li className="nav-item">
-                                <Link className="nav-link active" aria-current="page"  to="/">Home</Link>
+                                <Link className="nav-link active" aria-current="page" to="/">Home</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link"  to="/about">About</Link>
+                                <Link className="nav-link" to="/about">About</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link"  to="/skills">Skills</Link>
+                                <Link className="nav-link" to="/skills">Skills</Link>
                             </li>
-                            <li className="nav-item dropdown">
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/education">Education</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/register">Register</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/cards">Cards</Link>
+                            </li>
+                            {/* <li className="nav-item dropdown">
                                 <a className="nav-link dropdown-toggle"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Dropdown
                                 </a>
@@ -31,7 +41,21 @@ function Header() {
                                     <li><hr className="dropdown-divider"></hr></li>
                                     <li><a className="dropdown-item" >Something else here</a></li>
                                 </ul>
-                            </li>
+                            </li> */}
+                            {/* <ul className='navbar-nav'> */}
+                            {/* <select className='form-select ' >
+                                <li><option value="" disabled selected>More</option></li>
+                                <li><option value="1">
+                                    <Link to="/education">Education</Link>
+                                </option></li>
+                                <li><option value="2">
+                                    <Link to="/register">Register</Link>
+                                </option></li>
+                                <li><option value="3">
+                                    <Link to="/cards">Cards</Link>
+                                </option></li>
+                            </select> */}
+                            {/* </ul> */}
                             <li className="nav-item">
                                 <a className="nav-link disabled" aria-disabled="true">Disabled</a>
                             </li>

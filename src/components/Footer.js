@@ -2,9 +2,9 @@ import React from 'react'
 
 function Footer() {
     return (
-        <div>
-            <div className="card">
-                <div className="card-header">
+        <div className='fixed-bottom'>
+            <div className="card ">
+                <div className="card-header ">
                     Quote
                 </div>
                 <div className="card-body">
